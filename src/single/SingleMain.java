@@ -1,6 +1,6 @@
 package single;
 
-public class SingleMain {
+public class SingleMain {//µ¥ÀýÄ£Ê½
 	public static void main(String[] args) {
 		LazySingle lazySingle1 = LazySingle.newInstance();
 		LazySingle lazySingle2 = LazySingle.newInstance();
