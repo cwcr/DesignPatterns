@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import bulider.impl.BuilderMethodA;
 import bulider.impl.BuilderMethodB;
 
-public class BuliderMain {
+public class BuliderMain {//建造者莫斯
 	public static void main(String[] args) {
 		System.err.println("构造器");
 		System.err.println(new Buliding("bottom", "top"));
