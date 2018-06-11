@@ -5,7 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang3.SerializationUtils;
 
-public class PrototypeMain {
+public class PrototypeMain {//原型模式
 	public static void main(String[] args) throws CloneNotSupportedException{
 		CloneObject cloneObject1 = new CloneObject(1,2);
 		CloneObject cloneObject2 = (CloneObject)cloneObject1.clone();
