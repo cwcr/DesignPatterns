@@ -3,7 +3,7 @@ package iterator;
 import java.util.List;
 import java.util.Iterator;
 
-public class MyIterator<E> implements Iterator<E>{
+public class MyIterator<E> implements Iterator<E>,Iterable<E>{
 	
 	private List<E> list = null;
 	private int currencyIndex = 0;
@@ -12,6 +12,7 @@ public class MyIterator<E> implements Iterator<E>{
 		currencyIndex = 0;
 	}
 	
+	//Iterator 需要实现方法
 	
 	@Override
 	public boolean hasNext() {
@@ -28,6 +29,14 @@ public class MyIterator<E> implements Iterator<E>{
 			return list.get(currencyIndex-1);
 		}
 		return null;
+	}
+
+	//Iterable 需要实现方法
+
+	@Override
+	public Iterator<E> iterator() {
+		// TODO Auto-generated method stub
+		return this;
 	}
 
 }

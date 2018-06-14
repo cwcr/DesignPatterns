@@ -12,6 +12,17 @@ public class IteratorMain {
 			System.err.println(myIterator.next());
 		}
 		
+		System.err.println("--------------可以看出来增强for循环是通过迭代器实现的-----------------");
+		for(Integer i:myIterator) {
+			System.err.println(i);
+		}
+		
+		System.err.println("--------------继承Iterator的对象可以使用增强for循环-----------------");
+		MyIterator<Integer> myIterator2 = new MyIterator<Integer>(list);
+		for(Integer i:myIterator2) {
+			System.err.println(i);
+		}
+		
 		System.err.println("--------------原有iterator方法-----------------");
 		
 		//list map set 等都支持Iterator化
