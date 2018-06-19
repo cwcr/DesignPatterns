@@ -1,12 +1,12 @@
 package factory.ordinary.impl;
 
-import factory.dto.Animal;
+import factory.dto.Car;
 import factory.dto.impl.Cat;
 import factory.ordinary.Factory;
 
 public class CatFactory implements Factory{
 	@Override
-	public Animal getAnimal() {
+	public Car getAnimal() {
 		return new Cat();
 	}
 }

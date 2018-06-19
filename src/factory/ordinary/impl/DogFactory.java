@@ -1,12 +1,12 @@
 package factory.ordinary.impl;
 
-import factory.dto.Animal;
-import factory.dto.impl.Dog;
+import factory.dto.Car;
+import factory.dto.impl.BMW4;
 import factory.ordinary.Factory;
 
 public class DogFactory implements Factory{
 	@Override
-	public Animal getAnimal() {
-		return new Dog();
+	public Car getAnimal() {
+		return new BMW4();
 	}
 }

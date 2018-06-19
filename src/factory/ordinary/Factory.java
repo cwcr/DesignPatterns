@@ -1,7 +1,7 @@
 package factory.ordinary;
 
-import factory.dto.Animal;
+import factory.dto.Car;
 
 public interface Factory {
-	Animal getAnimal();
+	Car getAnimal();
 }

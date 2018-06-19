@@ -1,13 +1,13 @@
 package factory.sample;
 
-import factory.dto.Animal;
+import factory.dto.Car;
 
 public class SampleFactoryMain {
 	public static void main(String[] args) {
-		Animal cat = SampleFactory.getAnimal("cat");
+		Car cat = SampleFactory.getAnimal("cat");
 		cat.call();
 		
-		Animal dog = SampleFactory.getAnimal("dog");
+		Car dog = SampleFactory.getAnimal("dog");
 		dog.call();
 	}
 }

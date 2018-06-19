@@ -1,15 +1,15 @@
 package factory.abs;
 
-import factory.dto.Animal;
+import factory.dto.Car;
 
 public class AbstractFactory {
-	public static Animal getAnimal(String type) throws ReflectiveOperationException {
+	public static Car getAnimal(String type) throws ReflectiveOperationException {
 		try {
 			Class clazz = Class.forName(type);
 			try {
 				Object object = clazz.newInstance();
-				if(object instanceof Animal) {
-					return (Animal)object;
+				if(object instanceof Car) {
+					return (Car)object;
 				}else {
 					throw new IllegalAccessException("不是Animal类对象");
 				}

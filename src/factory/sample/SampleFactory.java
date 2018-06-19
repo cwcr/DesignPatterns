@@ -1,15 +1,15 @@
 package factory.sample;
 
-import factory.dto.Animal;
+import factory.dto.Car;
 import factory.dto.impl.Cat;
-import factory.dto.impl.Dog;
+import factory.dto.impl.BMW4;
 
 public class SampleFactory {
-	public static Animal getAnimal(String type) {
+	public static Car getAnimal(String type) {
 		if(type.equalsIgnoreCase("cat")) {
 			return new Cat();
 		}else if(type.equalsIgnoreCase("dog")) {
-			return new Dog();
+			return new BMW4();
 		}else {
 			return null;
 		}
