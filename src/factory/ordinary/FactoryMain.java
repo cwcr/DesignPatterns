@@ -1,17 +1,17 @@
 package factory.ordinary;
 
 import factory.dto.Car;
-import factory.ordinary.impl.CatFactory;
-import factory.ordinary.impl.DogFactory;
+import factory.ordinary.impl.*;
+import factory.ordinary.impl.*;
 
 public class FactoryMain {//工厂模式
 	public static void main(String[] args) {
-		Factory catFactory = new CatFactory();
-		Car cat = catFactory.getAnimal();
-		cat.call();
+		Factory bmw5Factory = new BMW5Factory();
+		Car bmw5 = bmw5Factory.buyCar();
+		bmw5.call();
 		
-		Factory dogFactory = new DogFactory();
-		Car dog = dogFactory.getAnimal();
-		dog.call();
+		Factory bmw4Factory = new BMW4Factory();
+		Car bmw4 = bmw4Factory.buyCar();
+		bmw4.call();
 	}
 }
